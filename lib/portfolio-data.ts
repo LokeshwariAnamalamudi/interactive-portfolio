@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Lokeshwari Anamalamudi',
   role: 'AI / Data Engineer & Data Analyst',
-  tagline: 'Clean pipelines. Smart analytics. Intelligent AI. That\'s my formula for impact.',
+  tagline: 'Clean pipelines. Smart analytics. Intelligent AI. That is my formula for impact.',
   location: 'San Diego, CA',
   email: 'lokeshwari1100@gmail.com',
   phone: '+1 (657) 966-1350',
@@ -40,7 +40,7 @@ export const skills = [
 
 export const stats = [
   { label: 'Dataset quality gain', value: '+23%' },
-  { label: 'Crop yield R²', value: '98%' },
+  { label: 'Crop yield R2', value: '98%' },
   { label: 'Digit model accuracy', value: '98.2%' },
   { label: 'Graduate GPA', value: '3.74' },
 ]
@@ -56,13 +56,13 @@ export const education: EducationItem[] = [
   {
     school: 'San Diego State University',
     degree: 'M.S. Computer Science',
-    period: '2024 – 2026',
-    detail: 'GPA 3.74 · Data Science, Big Data, Machine Learning, Visual Perception, Database Theory',
+    period: '2024 - 2026',
+    detail: 'GPA 3.74 - Data Science, Big Data, Machine Learning, Visual Perception, Database Theory',
   },
   {
     school: 'SRM University, India',
     degree: 'B.Tech Computer Science & Engineering',
-    period: '2020 – 2024',
+    period: '2020 - 2024',
     detail: 'GPA 9.0 / 10.0',
   },
 ]
@@ -140,7 +140,7 @@ export const experience: Experience[] = [
   {
     role: 'Data Research Assistant',
     company: 'SDSU Research Foundation',
-    period: '01/2025 – 05/2026',
+    period: '01/2025 - 05/2026',
     description:
       'Built production LLM fine-tuning pipeline ingesting 50K+ archival records with semantic chunking, entity linking, and RAG format; systematically eliminated hallucinations through rigorous data curation achieving 23% quality improvement. Delivered 200K+ production-ready QA pairs for Llama 2/GPT fine-tuning via multi-stage validation pipeline ensuring format consistency, semantic coherence, and factual completeness. Contributing to peer-reviewed GenAI research under PhD advisor mentorship.',
     tags: ['ETL', 'NLP', 'LLMs', 'RAG', 'Data Curation'],
@@ -148,15 +148,15 @@ export const experience: Experience[] = [
   {
     role: 'ML Engineer / Data Analyst',
     company: 'CVS Pharmacy Healthcare',
-    period: '06/2023 – 07/2024',
+    period: '06/2023 - 07/2024',
     description:
-      'Supported end-to-end ML infrastructure (AWS Glue, Apache Spark/EMR, SageMaker) processing 500M+ daily pharmacy transactions. Conducted SQL-based exploratory analysis discovering medication complexity increases dropout risk 3.2x. Assisted developing XGBoost classifier (0.87 AUC) via Bayesian-optimized experiments; evaluated using precision 0.76, recall 0.72, F1 0.74. Participated deploying real-time inference system (<200ms latency, 100K predictions/day) with CloudWatch drift monitoring, contributing to 70% cost reduction ($50K → $15K/month). Supported A/B testing (500K patients, 90 days) proving 8% adherence improvement (p<0.001) validated with $194M projected ROI.',
+      'Supported end-to-end ML infrastructure (AWS Glue, Apache Spark/EMR, SageMaker) processing 500M+ daily pharmacy transactions. Conducted SQL-based exploratory analysis discovering medication complexity increases dropout risk 3.2x. Assisted developing XGBoost classifier (0.87 AUC) via Bayesian-optimized experiments; evaluated using precision 0.76, recall 0.72, F1 0.74. Participated deploying real-time inference system (less than 200ms latency, 100K predictions/day) with CloudWatch drift monitoring, contributing to 70% cost reduction ($50K to $15K/month). Supported A/B testing (500K patients, 90 days) proving 8% adherence improvement (p less than 0.001) validated with $194M projected ROI.',
     tags: ['AWS', 'ML Infrastructure', 'XGBoost', 'SQL', 'A/B Testing', 'SageMaker', 'Apache Spark'],
   },
   {
     role: 'Research Intern',
     company: 'SRM University, India',
-    period: '05/2022 – 05/2023',
+    period: '05/2022 - 05/2023',
     description:
       'Conducted SQL-based exploratory analysis on 500K+ student records using time-series aggregations, cohort analysis, outlier detection; identified 40% irregular attendance creating retention risk. Implemented PyTorch CNN + OpenCV pipeline with transfer learning and data augmentation classifying 500K+ photos real-time; achieved 95% automation of manual classification. Architected temporal prediction system with rigorous evaluation (cross-validation, confusion matrices, calibration); built validation checkpoints ensuring zero data loss and established data governance framework.',
     tags: ['Python', 'OpenCV', 'PyTorch', 'SQL', 'EDA', 'Data Governance'],
@@ -174,7 +174,7 @@ export type Publication = {
 export const publications: Publication[] = [
   {
     title: 'Enhancing Agricultural Decision-Making Through ML-Based Crop Yield Predictions',
-    venue: 'Machine learning on multi-variable agricultural datasets · 98% R²',
+    venue: 'Machine learning on multi-variable agricultural datasets - 98% R2',
     year: '2024',
     authors: 'Feature engineering, statistical analysis & predictive modeling for data-driven planning.',
     link: 'https://www.researchgate.net/publication/375278720_Enhancing_Agricultural_Decision-Making_Through_Machine_Learning-Based_Crop_Yield_Predictions'
@@ -186,4 +186,4 @@ export const publications: Publication[] = [
     authors: 'Data preprocessing, feature extraction & classification to improve detection reliability.',
     link: 'https://ieeexplore.ieee.org/document/10402146'
   },
-]s
+]
