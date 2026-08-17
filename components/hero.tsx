@@ -1,12 +1,17 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { ArrowDown } from 'lucide-react'
+import { ArrowDown, ArrowRight } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from '@/components/brand-icons'
 import { profile, stats } from '@/lib/portfolio-data'
 import Image from 'next/image'
 
-const phrases = ['ETL pipelines.', 'ML models.', 'LLM & RAG systems.', 'clean datasets.']
+const phrases = [
+  'intelligent data pipelines',
+  'ML systems',
+  'LLM & RAG products',
+  'analytics solutions',
+]
 
 export function Hero() {
   const [displayText, setDisplayText] = useState('')
@@ -16,7 +21,7 @@ export function Hero() {
 
   useEffect(() => {
     const currentPhrase = phrases[phraseIndex]
-    const typingSpeed = isDeleting ? 50 : 100
+    const typingSpeed = isDeleting ? 45 : 85
 
     const timer = setTimeout(() => {
       if (!isDeleting) {
@@ -44,63 +49,134 @@ export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.35]"
+        className="pointer-events-none absolute inset-0 opacity-[0.28]"
         style={{
           backgroundImage:
-            'linear-gradient(to right, oklch(1 0 0 / 6%) 1px, transparent 1px), linear-gradient(to bottom, oklch(1 0 0 / 6%) 1px, transparent 1px)',
-          backgroundSize: '40px 40px',
-          maskImage: 'radial-gradient(ellipse 70% 60% at 50% 30%, black, transparent)',
-          WebkitMaskImage: 'radial-gradient(ellipse 70% 60% at 50% 30%, black, transparent)',
+            'linear-gradient(to right, oklch(1 0 0 / 5%) 1px, transparent 1px), linear-gradient(to bottom, oklch(1 0 0 / 5%) 1px, transparent 1px)',
+          backgroundSize: '48px 48px',
+          maskImage:
+            'radial-gradient(ellipse 78% 68% at 50% 34%, black, transparent)',
+          WebkitMaskImage:
+            'radial-gradient(ellipse 78% 68% at 50% 34%, black, transparent)',
         }}
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto flex min-h-svh max-w-6xl flex-col justify-center px-6 pb-16 pt-28">
-        <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
-          <div className="flex flex-1 flex-col">
-            <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-border bg-card/50 px-3 py-1">
-              <span className="relative inline-flex size-2">
-                <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-75" />
+      <div className="relative mx-auto flex min-h-svh max-w-[1220px] flex-col justify-center px-6 pb-20 pt-28">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
+          {/* LEFT */}
+          <div>
+            <div className="mb-7 inline-flex w-fit items-center gap-2 rounded-full border border-primary/40 bg-primary/[0.06] px-3 py-1.5">
+              <span className="relative flex size-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-60" />
                 <span className="relative inline-flex size-2 rounded-full bg-primary" />
               </span>
-              <span className="relative inline-flex size-2 rounded-full animate-ping bg-primary opacity-75" />
+
+              <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-primary">
+                Generative AI and Data Engineer
+              </span>
             </div>
 
-            <p className="mb-3 font-mono text-sm text-primary">Hi, my name is</p>
+            <p className="mb-4 font-mono text-sm text-primary">
+              Hello, I&apos;m
+            </p>
 
-            <h1 className="text-balance text-5xl font-semibold tracking-tight sm:text-7xl">{profile.name}</h1>
+            <h1 className="max-w-3xl text-balance text-6xl font-semibold leading-[0.96] tracking-[-0.045em] text-foreground sm:text-7xl lg:text-[76px]">
+              {profile.name}
+            </h1>
 
-            <h2 className="mt-3 text-balance text-3xl font-medium tracking-tight text-muted-foreground sm:text-5xl">
-              I build <span className="text-primary">{displayText}</span>
+            <h2 className="mt-6 max-w-3xl text-balance text-4xl font-medium leading-[1.05] tracking-[-0.03em] text-muted-foreground sm:text-5xl lg:text-[48px]">
+              I build{' '}
+              <span className="text-primary">
+                {displayText}
+                <span className="ml-1 inline-block h-[1em] w-[2px] translate-y-[0.12em] animate-pulse bg-primary" />
+              </span>
             </h2>
 
-            <p className="mt-6 max-w-xl text-pretty leading-relaxed text-muted-foreground">{profile.tagline}</p>
+            <p className="mt-6 max-w-2xl text-base leading-7 text-muted-foreground">
+              Building intelligent AI systems, scalable data pipelines, and analytics products that solve real business problems.
+            </p>
 
-            <div className="mt-8 flex items-center gap-2">
-              <a href="#projects" className="rounded-md bg-primary px-4 py-2 font-mono text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90">View my work</a>
-              <a href="#contact" className="rounded-md border border-border bg-primary px-4 py-2 font-mono text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90">Get in touch</a>
-              <a href={profile.socials.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="flex size-9 items-center justify-center rounded-md bg-primary text-primary-foreground transition-colors hover:bg-primary/90"><GithubIcon className="size-4" /></a>
-              <a href={profile.socials.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="flex size-9 items-center justify-center rounded-md bg-primary text-primary-foreground transition-colors hover:bg-primary/90"><LinkedinIcon className="size-4" /></a>
+            <div className="mt-9 flex flex-wrap items-center gap-3">
+              <a
+                href="#projects"
+                className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-3 font-mono text-xs font-medium text-primary-foreground transition-all hover:-translate-y-0.5 hover:bg-primary/90"
+              >
+                Explore my work
+                <ArrowRight className="size-4" />
+              </a>
+
+              <a
+                href="#contact"
+                className="rounded-xl border border-border bg-background/30 px-5 py-3 font-mono text-xs font-medium text-foreground transition-all hover:-translate-y-0.5 hover:border-primary/60 hover:text-primary"
+              >
+                Get in touch
+              </a>
+
+              <a
+                href={profile.socials.github}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+                className="flex size-10 items-center justify-center rounded-xl border border-border bg-background/30 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-primary/60 hover:text-primary"
+              >
+                <GithubIcon className="size-4" />
+              </a>
+
+              <a
+                href={profile.socials.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                className="flex size-10 items-center justify-center rounded-xl border border-border bg-background/30 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-primary/60 hover:text-primary"
+              >
+                <LinkedinIcon className="size-4" />
+              </a>
             </div>
+
+            {/* STATS */}
+            <dl className="mt-10 grid max-w-[760px] grid-cols-2 gap-3 sm:grid-cols-4">
+              {stats.map((stat) => (
+                <div
+                  key={stat.label}
+                  className="rounded-2xl border border-border bg-card/55 px-4 py-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/50 hover:bg-primary/[0.045]"
+                >
+                  <dd className="text-3xl font-semibold tracking-tight text-primary">
+                    {stat.value}
+                  </dd>
+
+                  <dt className="mt-2 font-mono text-[10px] leading-[1.35] text-muted-foreground">
+                    {stat.label}
+                  </dt>
+                </div>
+              ))}
+            </dl>
           </div>
 
-          <div className="flex flex-1 justify-center lg:justify-end">
-            <div className="relative size-80 overflow-hidden rounded-2xl border border-border">
-              <Image src="/profile_portfolio.jpg" alt="Lokeshwari Anamalamudi" fill className="object-cover" priority />
+          {/* RIGHT IMAGE */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative h-[540px] w-[430px] max-w-full overflow-hidden rounded-[30px] border border-primary/35 bg-card shadow-[0_0_70px_rgba(255,160,90,0.06)]">
+              <Image
+                src="/profile_portfolio.jpg"
+                alt="Lokeshwari Anamalamudi"
+                fill
+                className="object-cover"
+                priority
+              />
+
+              <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.03]" />
             </div>
           </div>
         </div>
 
-        <dl className="mt-16 grid max-w-2xl grid-cols-2 gap-px overflow-hidden rounded-xl border border-border">
-          {stats.map((stat) => (
-            <div key={stat.label} className="bg-card p-4 text-center">
-              <dt className="font-mono text-xs text-muted-foreground">{stat.label}</dt>
-              <dd className="mt-1 text-2xl font-semibold text-foreground">{stat.value}</dd>
-            </div>
-          ))}
-        </dl>
-
-        <a href="#about" aria-label="Scroll to about" className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 text-muted-foreground transition-colors hover:text-primary">
+        <a
+          href="#about"
+          aria-label="Scroll to about"
+          className="absolute bottom-5 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-muted-foreground transition-colors hover:text-primary md:flex"
+        >
+          <span className="font-mono text-[10px] uppercase tracking-[0.28em]">
+            Scroll to explore
+          </span>
           <ArrowDown className="size-5 animate-bounce" />
         </a>
       </div>

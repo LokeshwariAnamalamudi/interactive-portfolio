@@ -1,7 +1,8 @@
 export const profile = {
   name: 'Lokeshwari Anamalamudi',
   role: 'AI / Data Engineer & Data Analyst',
-  tagline: 'Clean pipelines. Smart analytics. Intelligent AI. That is my formula for impact.',
+  tagline:
+    'Clean pipelines. Smart analytics. Intelligent AI. That is my formula for impact.',
   location: 'San Diego, CA',
   email: 'lokeshwari1100@gmail.com',
   phone: '+1 (657) 966-1350',
@@ -16,32 +17,46 @@ export const skills = [
   'Python',
   'R',
   'SQL',
-  'Pandas',
-  'NumPy',
-  'Scikit-learn',
-  'XGBoost',
-  'PyTorch',
-  'TensorFlow',
-  'OpenCV',
-  'LangChain',
-  'Hugging Face',
-  'FastAPI',
-  'Streamlit',
-  'PostgreSQL',
-  'MySQL',
-  'Snowflake',
-  'SQLite',
-  'ETL Pipelines',
-  'RAG',
-  'LLMs',
   'Git',
   'Linux/Unix',
+  'Jupyter Notebook',
+  'PyTorch',
+  'TensorFlow',
+  'Scikit-learn',
+  'XGBoost',
+  'OpenCV',
+  'Pandas',
+  'NumPy',
+  'Large Language Models',
+  'Small Language Models',
+  'Fine-Tuning',
+  'RAG',
+  'Prompt Engineering',
+  'Agentic Workflows',
+  'LangChain',
+  'Vector Databases',
+  'OpenAI API',
+  'Hugging Face',
+  'Power BI',
+  'Data Cleaning',
+  'Feature Engineering',
+  'Statistical Analysis',
+  'Model Evaluation',
+  'Explainable AI',
+  'FastAPI',
+  'Streamlit',
+  'NLP',
+  'Deep Learning',
+  'Model Optimization',
+  'Production ML Systems',
+  'Data Pipelines',
+  'Business Problem Solving',
 ]
 
 export const stats = [
-  { label: 'Dataset quality gain', value: '+23%' },
-  { label: 'Crop yield R2', value: '98%' },
-  { label: 'Digit model accuracy', value: '98.2%' },
+  { label: 'Training samples processed', value: '200K+' },
+  { label: 'Professional roles', value: '3' },
+  { label: 'Research publications', value: '2' },
   { label: 'Graduate GPA', value: '3.74' },
 ]
 
@@ -57,7 +72,8 @@ export const education: EducationItem[] = [
     school: 'San Diego State University',
     degree: 'M.S. Computer Science',
     period: '2024 - 2026',
-    detail: 'GPA 3.74 - Data Science, Big Data, Machine Learning, Visual Perception, Database Theory',
+    detail:
+      'GPA 3.74 - Data Science, Big Data, Machine Learning, Visual Perception, Database Theory',
   },
   {
     school: 'SRM University, India',
@@ -101,11 +117,13 @@ export const projects: Project[] = [
       { label: 'Focus', value: 'temporal' },
       { label: 'Tuning', value: 'FP analysis' },
     ],
+    accent: false,
   },
   {
     title: 'Prism - AI Email Triage Agent',
     time: 'Personal Project',
-    summary: 'AI-powered email intelligence agent that uses LLMs to automatically categorize, prioritize, and draft responses to emails with persistent sender memory.',
+    summary:
+      'AI-powered email intelligence agent that uses LLMs to automatically categorize, prioritize, and draft responses to emails with persistent sender memory.',
     tags: ['Python', 'LangChain', 'Claude API', 'Streamlit', 'SQLite'],
     metrics: [
       { label: 'Emails Processed', value: '77+' },
@@ -115,14 +133,15 @@ export const projects: Project[] = [
     accent: false,
   },
   {
-    title: 'Video Surveillance and Tracking System',
-    time: 'Research Project',
-    summary: 'Computer vision pipeline for real-time object detection and tracking using deep learning models with frame-by-frame analysis and multi-object tracking.',
-    tags: ['Python', 'Computer Vision', 'Deep Learning', 'OpenCV', 'YOLO'],
+    title: 'Personal Finance Analyzer',
+    time: 'Data Analytics Project',
+    summary:
+      'Developed a privacy-focused Personal Finance Analyzer supporting 3 bank-statement formats (CSV, Excel, PDF) using Python, Pandas, and PDFPlumber, with automated transaction cleaning and rule-based categorization across 8 spending categories. Built an interactive Tableau financial dashboard to visualize category-wise spending, total transaction amounts, and income-vs-expense breakdowns, enabling users to quickly identify spending patterns while keeping financial data locally processed.',
+    tags: ['Python', 'Pandas', 'PDFPlumber', 'Tableau', 'Data Analytics'],
     metrics: [
-      { label: 'Detection Rate', value: '95%' },
-      { label: 'FPS', value: '30+' },
-      { label: 'Objects Tracked', value: 'Multi' },
+      { label: 'Statement Formats', value: '3' },
+      { label: 'Spending Categories', value: '8' },
+      { label: 'Dashboard', value: 'Tableau' },
     ],
     accent: false,
   },
@@ -138,28 +157,57 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
-    role: 'Data Research Assistant',
-    company: 'SDSU Research Foundation',
+    role: 'Generative AI and Data Engineer',
+    company: 'SDSU Research Foundation | San Diego, USA',
     period: '01/2025 - 05/2026',
     description:
-      'Built production LLM fine-tuning pipeline ingesting 50K+ archival records with semantic chunking, entity linking, and RAG format; systematically eliminated hallucinations through rigorous data curation achieving 23% quality improvement. Delivered 200K+ production-ready QA pairs for Llama 2/GPT fine-tuning via multi-stage validation pipeline ensuring format consistency, semantic coherence, and factual completeness. Contributing to peer-reviewed GenAI research under PhD advisor mentorship.',
-    tags: ['ETL', 'NLP', 'LLMs', 'RAG', 'Data Curation'],
+      'Engineered data pipelines transforming 50K+ archival documents into training data using semantic chunking and entity linking, generating 200K+ QA pairs and improving model accuracy from 68% to 91%. Implemented an automated quality validation framework across 200K samples, reducing manual review from 40 to 8 hours per week while maintaining zero critical data errors. Structured grounded RAG training data for Llama 2 and GPT models, reducing hallucinated responses from 89% to 11%. Versioned training data with DVC, managed checkpoints through MLflow Model Registry, and built CloudWatch monitoring with automated retraining when validation accuracy dropped below 88%.',
+    tags: [
+      'Python',
+      'Generative AI',
+      'LLMs',
+      'RAG',
+      'Llama 2',
+      'GPT',
+      'DVC',
+      'MLflow',
+      'AWS CloudWatch',
+      'Data Pipelines',
+    ],
   },
   {
-    role: 'ML Engineer / Data Analyst',
-    company: 'CVS Pharmacy Healthcare',
-    period: '06/2023 - 07/2024',
+    role: 'AI and Data Systems Engineer',
+    company: 'Medha Constructions | Bengaluru, India',
+    period: '06/2023 - 06/2024',
     description:
-      'Supported end-to-end ML infrastructure (AWS Glue, Apache Spark/EMR, SageMaker) processing 500M+ daily pharmacy transactions. Conducted SQL-based exploratory analysis discovering medication complexity increases dropout risk 3.2x. Assisted developing XGBoost classifier (0.87 AUC) via Bayesian-optimized experiments; evaluated using precision 0.76, recall 0.72, F1 0.74. Participated deploying real-time inference system (less than 200ms latency, 100K predictions/day) with CloudWatch drift monitoring, contributing to 70% cost reduction ($50K to $15K/month). Supported A/B testing (500K patients, 90 days) proving 8% adherence improvement (p less than 0.001) validated with $194M projected ROI.',
-    tags: ['AWS', 'ML Infrastructure', 'XGBoost', 'SQL', 'A/B Testing', 'SageMaker', 'Apache Spark'],
+      'Developed an AI extraction system processing 1,200+ construction documents through prompt engineering, achieving 91% precision and 94% recall on 200 manually labeled documents compared with a 62% baseline accuracy. Designed a data quality pipeline standardizing 12 key project attributes and reduced errors from 245 to 27 per 100 documents. Integrated AI-extracted features into an ML cost predictor, improving MAPE from 20.2% to 13.4%. Deployed the system to AWS SageMaker with CloudWatch monitoring and automated rollback when MAPE exceeded 15%, reducing quotation time from 6 to 2 hours.',
+    tags: [
+      'Python',
+      'Prompt Engineering',
+      'AI Extraction',
+      'Data Quality',
+      'Machine Learning',
+      'AWS SageMaker',
+      'AWS CloudWatch',
+      'Model Monitoring',
+    ],
   },
   {
-    role: 'Research Intern',
-    company: 'SRM University, India',
+    role: 'Machine Learning Engineer',
+    company: 'SRM University | Vijayawada, India',
     period: '05/2022 - 05/2023',
     description:
-      'Conducted SQL-based exploratory analysis on 500K+ student records using time-series aggregations, cohort analysis, outlier detection; identified 40% irregular attendance creating retention risk. Implemented PyTorch CNN + OpenCV pipeline with transfer learning and data augmentation classifying 500K+ photos real-time; achieved 95% automation of manual classification. Architected temporal prediction system with rigorous evaluation (cross-validation, confusion matrices, calibration); built validation checkpoints ensuring zero data loss and established data governance framework.',
-    tags: ['Python', 'OpenCV', 'PyTorch', 'SQL', 'EDA', 'Data Governance'],
+      'Constructed a video surveillance system using PyTorch and OpenCV to process 500K+ video frames and identify abnormal behavior, achieving 87% detection accuracy and automatically flagging 89% of security incidents. Applied ImageNet transfer learning to maintain less than 5% accuracy variance across 10 CCTV locations with varying camera angles and lighting conditions. Engineered temporal risk forecasting models that improved prediction accuracy from a 62% baseline to 87%, helping identify three high-risk zones for additional camera coverage.',
+    tags: [
+      'Python',
+      'PyTorch',
+      'OpenCV',
+      'Computer Vision',
+      'Transfer Learning',
+      'ImageNet',
+      'Video Analytics',
+      'Temporal Modeling',
+    ],
   },
 ]
 
@@ -173,17 +221,22 @@ export type Publication = {
 
 export const publications: Publication[] = [
   {
-    title: 'Enhancing Agricultural Decision-Making Through ML-Based Crop Yield Predictions',
-    venue: 'Machine learning on multi-variable agricultural datasets - 98% R2',
+    title:
+      'Enhancing Agricultural Decision-Making Through ML-Based Crop Yield Predictions',
+    venue:
+      'Machine learning on multi-variable agricultural datasets - 98% R2',
     year: '2024',
-    authors: 'Feature engineering, statistical analysis & predictive modeling for data-driven planning.',
-    link: 'https://www.researchgate.net/publication/375278720_Enhancing_Agricultural_Decision-Making_Through_Machine_Learning-Based_Crop_Yield_Predictions'
+    authors:
+      'Feature engineering, statistical analysis & predictive modeling for data-driven planning.',
+    link:
+      'https://www.researchgate.net/publication/375278720_Enhancing_Agricultural_Decision-Making_Through_Machine_Learning-Based_Crop_Yield_Predictions',
   },
   {
     title: 'Hybrid Deep Learning Approach for Fake News Detection',
     venue: 'NLP-based deep learning pipelines for misinformation detection',
     year: '2024',
-    authors: 'Data preprocessing, feature extraction & classification to improve detection reliability.',
-    link: 'https://ieeexplore.ieee.org/document/10402146'
+    authors:
+      'Data preprocessing, feature extraction & classification to improve detection reliability.',
+    link: 'https://ieeexplore.ieee.org/document/10402146',
   },
 ]
