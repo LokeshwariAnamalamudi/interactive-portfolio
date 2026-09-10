@@ -197,7 +197,7 @@ export const experience: Experience[] = [
     company: 'SRM University | Vijayawada, India',
     period: '05/2022 - 05/2023',
     description:
-      'Constructed a video surveillance system using PyTorch and OpenCV to process 500K+ video frames and identify abnormal behavior, achieving 87% detection accuracy and automatically flagging 89% of security incidents. Applied ImageNet transfer learning to maintain less than 5% accuracy variance across 10 CCTV locations with varying camera angles and lighting conditions. Engineered temporal risk forecasting models that improved prediction accuracy from a 62% baseline to 87%, helping identify three high-risk zones for additional camera coverage.',
+     'Developed a computer vision surveillance system using PyTorch and OpenCV, processing 500K+ video frames to identify abnormal behavior. Achieved 87% detection accuracy on a held-out test set and automatically flagged 89% of security incidents. Applied transfer learning using ImageNet pre-trained models to improve detection across varying camera angles and lighting conditions. Validated the system across 10 CCTV locations, maintaining less than 5% accuracy variance across camera types. Converted model predictions into automated security alerts, reducing the need for continuous manual video monitoring and helping security personnel identify incidents requiring immediate review.',
     tags: [
       'Python',
       'PyTorch',

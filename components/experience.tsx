@@ -71,7 +71,8 @@ const experienceDetails: Record<string, ExperienceDetail> = {
 
   'SRM University | Vijayawada, India': {
     headline:
-      'Built computer vision and temporal forecasting systems for abnormal-behavior detection and security incident prediction.',
+      'Developed a computer vision surveillance system for abnormal-behavior detection and automated security alerts.',
+
     metrics: [
       {
         value: '500K+',
@@ -82,15 +83,16 @@ const experienceDetails: Record<string, ExperienceDetail> = {
         label: 'Detection accuracy',
       },
       {
-        value: '62% → 87%',
-        label: 'Forecasting accuracy',
+        value: '89%',
+        label: 'Security incidents flagged',
       },
     ],
+
     workflow: [
       'Frame processing',
       'Transfer learning',
-      'Temporal forecasting',
-      'Risk-zone analysis',
+      'Abnormal-behavior detection',
+      'Security alerts',
     ],
   },
 }
