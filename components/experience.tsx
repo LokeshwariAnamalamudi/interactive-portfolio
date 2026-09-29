@@ -21,7 +21,7 @@ type ExperienceDetail = {
 const experienceDetails: Record<string, ExperienceDetail> = {
   'SDSU Research Foundation | San Diego, USA': {
     headline:
-      'Engineered scalable data pipelines for creating, validating, versioning, and monitoring grounded LLM training datasets.',
+      'Built a RAG-based conversational knowledge system for Pepper to answer questions grounded in SDSU archival sources.',
     metrics: [
       {
         value: '50K+',
@@ -33,7 +33,7 @@ const experienceDetails: Record<string, ExperienceDetail> = {
       },
       {
         value: '68% → 91%',
-        label: 'Model accuracy',
+        label: 'Grounded-answer accuracy',
       },
     ],
     workflow: [
@@ -49,7 +49,7 @@ const experienceDetails: Record<string, ExperienceDetail> = {
       'Developed AI-powered document extraction, data quality, and cost-prediction systems for construction workflows.',
     metrics: [
       {
-        value: '1,200+',
+        value: '11K+',
         label: 'Documents processed',
       },
       {
@@ -83,8 +83,8 @@ const experienceDetails: Record<string, ExperienceDetail> = {
         label: 'Detection accuracy',
       },
       {
-        value: '89%',
-        label: 'Security incidents flagged',
+        value: '<5%',
+        label: 'Accuracy variance across 10 CCTV sites',
       },
     ],
 
