@@ -157,11 +157,11 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
-    role: 'Generative AI and Data Engineer',
+    role: 'GenAI & Data Engineer',
     company: 'SDSU Research Foundation | San Diego, USA',
     period: '01/2025 - 05/2026',
     description:
-      'Engineered data pipelines transforming 50K+ archival documents into training data using semantic chunking and entity linking, generating 200K+ QA pairs and improving model accuracy from 68% to 91%. Implemented an automated quality validation framework across 200K samples, reducing manual review from 40 to 8 hours per week while maintaining zero critical data errors. Structured grounded RAG training data for Llama 2 and GPT models, reducing hallucinated responses from 89% to 11%. Versioned training data with DVC, managed checkpoints through MLflow Model Registry, and built CloudWatch monitoring with automated retraining when validation accuracy dropped below 88%.',
+      'Built a RAG-based conversational knowledge system for the Pepper humanoid robot, processing 50K+ SDSU archival documents using semantic chunking, entity linking, and vector retrieval to answer questions about university history. Generated 200K+ document-grounded QA pairs and automated validation for factual consistency, formatting, and source alignment, reducing manual QA review from 40 to 8 hours per week. Improved grounded-answer accuracy from 68% to 91% through retrieval optimization, prompt engineering, and source-grounded generation with Llama and GPT models; versioned datasets and experiments using DVC and MLflow with CloudWatch monitoring.',
     tags: [
       'Python',
       'Generative AI',
@@ -176,11 +176,11 @@ export const experience: Experience[] = [
     ],
   },
   {
-    role: 'AI and Data Systems Engineer',
+    role: 'AI & Data Systems Engineer',
     company: 'Medha Constructions | Bengaluru, India',
     period: '06/2023 - 06/2024',
     description:
-      'Developed an AI extraction system processing 1,200+ construction documents through prompt engineering, achieving 91% precision and 94% recall on 200 manually labeled documents compared with a 62% baseline accuracy. Designed a data quality pipeline standardizing 12 key project attributes and reduced errors from 245 to 27 per 100 documents. Integrated AI-extracted features into an ML cost predictor, improving MAPE from 20.2% to 13.4%. Deployed the system to AWS SageMaker with CloudWatch monitoring and automated rollback when MAPE exceeded 15%, reducing quotation time from 6 to 2 hours.',
+      'Developed an AI extraction system to process 11K+ construction documents, using a labeled subset of 6,500 documents for training, validation, and testing; achieved 91% precision and 94% recall on the held-out test set through prompt engineering. Built a data quality pipeline to validate and standardize 12 extracted project attributes used for cost estimation, reducing attribute-level errors from 245 to 27 per 100 documents. Integrated the validated attributes into an ML cost prediction pipeline, reducing MAPE from 20.2% to 13.4%. Deployed the model on AWS SageMaker with CloudWatch performance monitoring, helping reduce quotation preparation time from 6 to 2 hours.',
     tags: [
       'Python',
       'Prompt Engineering',
@@ -197,7 +197,7 @@ export const experience: Experience[] = [
     company: 'SRM University | Vijayawada, India',
     period: '05/2022 - 05/2023',
     description:
-     'Developed a computer vision surveillance system using PyTorch and OpenCV, processing 500K+ video frames to identify abnormal behavior. Achieved 87% detection accuracy on a held-out test set and automatically flagged 89% of security incidents. Applied transfer learning using ImageNet pre-trained models to improve detection across varying camera angles and lighting conditions. Validated the system across 10 CCTV locations, maintaining less than 5% accuracy variance across camera types. Converted model predictions into automated security alerts, reducing the need for continuous manual video monitoring and helping security personnel identify incidents requiring immediate review.',
+     'Developed a computer vision surveillance system using PyTorch and OpenCV, processing 500K+ video frames to detect abnormal behavior and achieving 87% classification accuracy on a held-out test set. Applied transfer learning with ImageNet-pretrained models and data augmentation to improve robustness across varying camera angles and lighting conditions, validating performance across 10 CCTV locations with less than 5% accuracy variance. Built an automated event-flagging pipeline that converted model predictions into security alerts, enabling personnel to review detected incidents without continuously monitoring CCTV feeds.',
     tags: [
       'Python',
       'PyTorch',
